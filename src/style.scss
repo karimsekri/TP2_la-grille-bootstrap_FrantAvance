@@ -1,69 +1,48 @@
 @use "variables";
-@use "mixins";
+@use "mixins" as *;
 
-
-// .container {
-//     max-width: 1200px;
-//     margin: 0 auto;
-// }
-
-// .row {
-//     display: flex;
-//     flex-wrap: wrap;
-//     // justify-content: space-evenly;
-// }
-
-// .rowPurple{
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
+body{
+    .container{    
+        @include container(); 
+          
+    }
+    
+    .row{
+        @include row();
+    }  
+    
+    .col-xs-12{
+        @include col-xs-12();
+    }
+    .col-md-8{
+        @include col-md-8();
+    }
    
-// }
-// .col-lg-3{
-//     width: 25%;
-//     max-width: 25%;
-//     margin : 2%
-// }
-// .col-lg-4{
-//     width: 33.33%;
-//     max-width: 33.33%;
-//     margin : 2%
-// }
-// .col-lg-6{
-//     width: 50%;
-//     max-width: 50%;
-//     margin : 2%
-// }
-// .col-lg-8{
-//     width: 66.66%;
-//     max-width: 66.66%;
-//     margin : 2%
-// }
+    .col-md-4{
+        @include col-md-4();
+    }
+    .col-md-3{
+        @include col-md-3();
+    }
+    .col-md-6{
+        @include col-md-6();
+    }
 
-// .col-xs-6 {
-//     width: 50%;
-//     max-width: 50%;
-//     margin : 2%
-// }
+    .red{
+        @include red();
+    }
+    .blue{
+        @include blue();
+    }
+    .orange{
+        @include orange();
+    }
+    .purple{
+        @include purple();
+    }
+    .border{
+        @include border();
+    }}
 
-// .col-sm-3 {
-//     width: 25%;
-//     max-width: 25%;
-//     margin : 2%
-// }
 
-.red {
-    background-color: red;
-}
 
-.orange {
-    background-color: rgb(224, 106, 38);
-}
-
-.purple {
-    background-color: purple;
-}
-
-.blue {
-    background-color: blue;
-}

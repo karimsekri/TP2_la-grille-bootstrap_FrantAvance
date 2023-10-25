@@ -1,26 +1,61 @@
-@use "variables";
+@use "variables" as *;
 
-// @mixin container () {
-//     max-width: 1200px;
-//     margin: 0 auto;
-// }
+@mixin container () {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: solid 1px black;
+    
+}
 
-// @mixin row {
-//     display: flex;
-//     flex-wrap: wrap;
-// }
+@mixin row () {
+    border:solid 1px green;
+    display: flex;
+    flex-direction: row;
+    //flex-wrap: wrap;
+}
+@mixin row2 () {
+    border:solid 1px green;
+    display: flex;
+    flex-direction: column;
+    //flex-wrap: wrap;
+}
 
-// @mixin col-xs-6 {
-//     width: 50%;
-//     max-width: 50%;
-// }
+@mixin col-xs-12 () {
+    width: 100%;   
+}
 
-// @mixin col-sm-3 {
-//     width: 25%;
-//     max-width: 25%;
-// }
+@mixin col-md-8() {
+    width: 66.66%;
+}
+@mixin col-md-4() {
+    width: 33.33%;
+}
+@mixin col-md-6() {
+    width: 50%;
+}
+@mixin col-md-3() {
+    width: 25%;
+}
 
-// @mixin blue {
-//     background-color: $blue-color;
-// }
+
+@mixin red (){
+    background-color: $red-color;
+}
+@mixin blue () {
+    background-color: $blue-color;
+}
+
+@mixin orange() {
+    background-color: $orange_color;
+}
+
+@mixin purple() {
+    background-color: $purple-color;
+}
+
+@mixin border() {
+    border: solid 1px white;
+}
+
+
 
